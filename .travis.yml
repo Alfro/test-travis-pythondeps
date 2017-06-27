@@ -1,0 +1,15 @@
+sudo: required
+dist: trusty
+
+language: python
+python:
+  - "2.7"
+
+# allow python dependencies to be installed via apt-get
+virtualenv:
+  system_site_packages: true
+
+install:
+  - sudo apt-get install --yes python-gi
+script:
+  - python test.py
