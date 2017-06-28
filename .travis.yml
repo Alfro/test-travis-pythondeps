@@ -11,5 +11,6 @@ virtualenv:
 
 install:
   - sudo apt-get install --yes python-gi
+  - pip install gi
 script:
   - python test.py
