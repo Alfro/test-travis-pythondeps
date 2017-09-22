@@ -12,7 +12,6 @@ virtualenv:
   system_site_packages: true
 
 install:
-  - sudo apt-get install --yes python-gi
-  - pip install gi
+  - sudo apt-get install --yes python-gobject
 script:
   - python test.py
