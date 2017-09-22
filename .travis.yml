@@ -12,6 +12,6 @@ virtualenv:
   system_site_packages: true
 
 install:
-  - sudo apt-get install --yes python-gobject
+  - sudo apt-get install --yes python-gi gir1.2-gstreamer-1.0 gir1.2-gst-plugins-base-1.0 gir1.2-gtk-3.0
 script:
   - python test.py
